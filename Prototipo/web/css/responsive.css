@@ -635,7 +635,7 @@
 	.table.table-hover > tbody > tr > td, .table.table-hover > tbody > tr > th, .table.table-hover > tfoot > tr > td, .table.table-hover > tfoot > tr > th, .table.table-hover > thead > tr > td, .table.table-hover > thead > tr > th {
 		white-space: nowrap;
 	}
-	
+      
 }
  
 /* Large Mobile :480px. */

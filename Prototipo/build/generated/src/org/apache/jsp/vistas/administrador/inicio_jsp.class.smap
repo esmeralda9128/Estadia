@@ -1,0 +1,19 @@
+SMAP
+inicio_jsp.java
+JSP
+*S JSP
+*F
++ 0 inicio.jsp
+vistas/administrador/inicio.jsp
+*L
+5,6:44
+10,4:50
+14,2:54,3
+16:60
+17,17:61,3
+34,13:112
+47:125,3
+48,839:128
+887,28:967,3
+915,3:1051
+*E

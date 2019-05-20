@@ -1,44 +1,44 @@
 *, *:before, *:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 
 .login_form {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-flex: center;
-  -moz-box-flex: center;
-  -webkit-flex: center;
-  -ms-flex: center;
-  flex: center;
-  -webkit-justify-content: center;
-  -moz-justify-content: center;
-  justify-content: center;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-align-items: center;
-  align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-flex: center;
+    -moz-box-flex: center;
+    -webkit-flex: center;
+    -ms-flex: center;
+    flex: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 
 .login-wrapper {
-  max-width: 500px;
-  width: 100%;
+    max-width: 500px;
+    width: 100%;
 }
 
 .logo {
-  text-align: center;
+    text-align: center;
 }
 .logo img {
-  max-width: 200px;
-  width: 100%;
-  margin: 1em auto 2em;
+    max-width: 200px;
+    width: 100%;
+    margin: 1em auto 2em;
 }
 
 /*form label {
@@ -73,20 +73,20 @@ form input:focus {
 
 .hide-show {
   width: 94%;
-  max-height:  20px;
-  margin: -3.62em 3% 0 1%;
+  margin: -3.62em 3% 0 1.5%;
   position: relative;
-  z-index: 3;
+  z-index: 5;
   display: none;
+  color: #fff;
 }
 .hide-show span {
-  background: #0D2F73;
-  color: #fff;
+  background: #020873;
   font-size: 1em;
-  padding: 1em;
+  padding: .5em;
   float: right;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
   border-radius: 2px;
   cursor: pointer;
 }
+

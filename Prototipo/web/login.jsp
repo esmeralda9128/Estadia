@@ -38,8 +38,6 @@
     <body>
         <div class="login_form">
             <setion class="login-wrapper">
-
-
                 <form id="login" method="post" action="#">      
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -62,6 +60,7 @@
                                             <input  class="form-control input-sm"  required name="login[password]" type="password" placeholder="Ingresa tu contraseña">
                                             <div class="hide-show">
                                                 <span>Mostrar</span>
+                                            
                                             </div>
                                         </div>
                                     </div>
@@ -104,6 +103,7 @@
     <script src="<%=context%>/js/chat/jquery.chat.js"></script>
     <script src="<%=context%>/js/todo/jquery.todo.js"></script>
     <script src="<%=context%>/js/plugins.js"></script>
-    <script src="<%=context%>/js/main.js"></script>
-    <script  src="<%=context%>/js/index.js"></script>
+    <script src="<%=context%>/js/index.js"></script>
+   
+    
 </html>
