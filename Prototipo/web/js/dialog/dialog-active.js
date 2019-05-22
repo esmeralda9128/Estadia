@@ -17,7 +17,11 @@
 
 	//Success Message
 	$('#sa-success').on('click', function(){
-		swal("Good job!", "Lorem ipsum dolor cry sit amet, consectetur adipiscing elit. Sed lorem erat, tincidunt vitae ipsum et, Spensaduran pellentesque maximus eniman. Mauriseleifend ex semper, lobortis purus.", "success")
+		swal("Exito", "Se ha agreado correctamente", "success")
+	});
+        //Success Message
+	$('#sa-error').on('click', function(){
+		swal("Error", "No se ha agreado correctamente", "error")
 	});
 
 	//Warning Message

@@ -8,12 +8,12 @@
 	var areachartfalse = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: ["January", "February", "March", "April"],
+			labels: ["Enero", "Febrero", "Marzo", "Abril"],
 			datasets: [{
 				label: "My First dataset",
 				fill: false,
-                backgroundColor: '#0D2F73',
-				borderColor: '#0D2F73',
+                backgroundColor: '#020873',
+				borderColor: '#020873',
 				data: [0, -20, 20, -20, 20, -20, 20]
             }]
 		},
@@ -53,12 +53,12 @@
 	var areachartorigin = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: ["January", "February", "March", "April"],
+			labels: ["Enero", "Febrero", "Marzo", "Abril"],
 			datasets: [{
 				label: "My First dataset",
 				fill: 'origin',
-                backgroundColor: '#0D2F73',
-				borderColor: '#0D2F73',
+                backgroundColor: '#020873',
+				borderColor: '#020873',
 				data: [0, -20, 20, -20]
             }]
 		},
@@ -97,12 +97,12 @@
 	var areachartfillstart = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: ["January", "February", "March", "April"],
+			labels: ["Enero", "Febrero", "Marzo", "Abril"],
 			datasets: [{
 				label: "My First dataset",
 				fill: 'start',
-                backgroundColor: '#0D2F73',
-				borderColor: '#0D2F73',
+                backgroundColor: '#020873',
+				borderColor: '#020873',
 				data: [0, 10, 20, 30]
             }]
 		},
@@ -143,12 +143,12 @@
 	var areachartend = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: ["January", "February", "March", "April"],
+			labels: ["Enero", "Febrero", "Marzo", "Abril"],
 			datasets: [{
 				label: "My First dataset",
 				fill: 'end',
-                backgroundColor: '#0D2F73',
-				borderColor: '#0D2F73',
+                backgroundColor: '#020873',
+				borderColor: '#020873',
 				data: [100, 90, 70, 60]
             }]
 		},

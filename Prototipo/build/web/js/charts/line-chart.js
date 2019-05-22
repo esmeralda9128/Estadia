@@ -8,12 +8,12 @@
 	var basiclinechart = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: ["January", "February", "March"],
+			labels: ["Enero", "Febrero", "Marzo"],
 			datasets: [{
 				label: "My First dataset",
 				fill: false,
-                backgroundColor: '#0D2F73',
-				borderColor: '#0D2F73',
+                backgroundColor: '#020873',
+				borderColor: '#020873',
 				data: [9, 12, 19]
             }, {
                 label: "My Second dataset",
@@ -69,8 +69,8 @@
 			datasets: [{
 				label: "Cubic interpolation",
 				fill: false,
-                backgroundColor: '#0D2F73',
-				borderColor: '#0D2F73',
+                backgroundColor: '#020873',
+				borderColor: '#020873',
 				data: [0, 15, 17, 200, 0, 12, -200, 5, 200, 8, 200, 12, 200],
 				cubicInterpolationMode: 'monotone'
             }, {
@@ -122,7 +122,7 @@
 	var linechartstyles = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: ["January", "February", "March"],
+			labels: ["Enero", "Febrero", "Marzo"],
 			datasets: [{
 				label: "Unfilled",
 				fill: false,
@@ -179,11 +179,11 @@
 	var linechartpointcircle = new Chart(ctx, {
 		type: 'line',
 		data: {
-			labels: ["May", "June", "July"],
+			labels: ["Mayo", "Junio", "Julio"],
 			datasets: [{
 				label: "My First dataset",
-				backgroundColor: '#0D2F73',
-				borderColor: '#0D2F73',
+				backgroundColor: '#020873',
+				borderColor: '#020873',
 				data: [0, 10, 20, 30, 40, 50, 60],
 				fill: false,
 				pointRadius: 4,

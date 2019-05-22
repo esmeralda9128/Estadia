@@ -17,14 +17,10 @@
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
-  line-height: 1;
-  color:black;
+line-height: 1;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-.notika-icon:hover{
-    color: white;
 }
 
 .notika-menu-befores:before {

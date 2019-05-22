@@ -44,7 +44,7 @@
 	var barchart2 = new Chart(ctx, {
 		type: 'bar',
 		data: {
-			labels: ["January", "February"],
+			labels: ["Enero", "Febrero"],
 			datasets: [{
                 label: 'Dataset 1',
 				data: [150, 170],
@@ -89,7 +89,7 @@
 	var barchart3 = new Chart(ctx, {
 		type: 'horizontalBar',
 		data: {
-			labels: ["May", "June"],
+			labels: ["Mayo", "Junio"],
 			datasets: [{
                 label: 'Dataset 1',
 				data: [3, 9],
@@ -135,7 +135,7 @@
 	var barchart4 = new Chart(ctx, {
 		type: 'bar',
 		data: {
-			labels: ["March", "April"],
+			labels: ["Marzo", "Abril"],
 			datasets: [{
                 label: 'Dataset 1',
 				data: [12, 19, 3, 5, 2, 3, 9],

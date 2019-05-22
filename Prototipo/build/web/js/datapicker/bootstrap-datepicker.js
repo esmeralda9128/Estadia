@@ -27,7 +27,7 @@
 	function UTCDate(){
 		return new Date(Date.UTC.apply(Date, arguments));
 	}
-	function UTCToday(){
+	function UTCHoy(){
 		var today = new Date();
 		return UTCDate(today.getFullYear(), today.getMonth(), today.getDate());
 	}
@@ -85,7 +85,7 @@
 
 	var Datepicker = function(element, options){
 		this.dates = new DateArray();
-		this.viewDate = UTCToday();
+		this.viewDate = UTCHoy();
 		this.focusDate = null;
 
 		this._process_options(options);
@@ -1071,20 +1071,20 @@
 						return new_date.getUTCMonth() === month;
 					}
 					// If going forward one month, make sure month is as expected
-					// (eg, Jan 31 -> Feb 31 == Feb 28, not Mar 02)
+					// (eg, Ene 31 -> Feb 31 == Feb 28, not Mar 02)
 					: function(){
 						return new_date.getUTCMonth() !== new_month;
 					};
 				new_month = month + dir;
 				new_date.setUTCMonth(new_month);
-				// Dec -> Jan (12) or Jan -> Dec (-1) -- limit expected date to 0-11
+				// Dic -> Ene (12) or Ene -> Dic (-1) -- limit expected date to 0-11
 				if (new_month < 0 || new_month > 11)
 					new_month = (new_month + 12) % 12;
 			}
 			else {
 				// For magnitudes >1, move one month at a time...
 				for (var i=0; i < mag; i++)
-					// ...which might decrease the day (eg, Jan 31 to Feb 28, etc)...
+					// ...which might decrease the day (eg, Ene 31 to Feb 28, etc)...
 					new_date = this.moveMonth(new_date, dir);
 				// ...then reset the day, keeping it in the new month
 				new_month = new_date.getUTCMonth();
@@ -1136,17 +1136,17 @@
 						break;
 					dir = e.keyCode === 37 ? -1 : 1;
 					if (e.ctrlKey){
-						newDate = this.moveYear(this.dates.get(-1) || UTCToday(), dir);
+						newDate = this.moveYear(this.dates.get(-1) || UTCHoy(), dir);
 						newViewDate = this.moveYear(focusDate, dir);
 						this._trigger('changeYear', this.viewDate);
 					}
 					else if (e.shiftKey){
-						newDate = this.moveMonth(this.dates.get(-1) || UTCToday(), dir);
+						newDate = this.moveMonth(this.dates.get(-1) || UTCHoy(), dir);
 						newViewDate = this.moveMonth(focusDate, dir);
 						this._trigger('changeMonth', this.viewDate);
 					}
 					else {
-						newDate = new Date(this.dates.get(-1) || UTCToday());
+						newDate = new Date(this.dates.get(-1) || UTCHoy());
 						newDate.setUTCDate(newDate.getUTCDate() + dir);
 						newViewDate = new Date(focusDate);
 						newViewDate.setUTCDate(focusDate.getUTCDate() + dir);
@@ -1164,17 +1164,17 @@
 						break;
 					dir = e.keyCode === 38 ? -1 : 1;
 					if (e.ctrlKey){
-						newDate = this.moveYear(this.dates.get(-1) || UTCToday(), dir);
+						newDate = this.moveYear(this.dates.get(-1) || UTCHoy(), dir);
 						newViewDate = this.moveYear(focusDate, dir);
 						this._trigger('changeYear', this.viewDate);
 					}
 					else if (e.shiftKey){
-						newDate = this.moveMonth(this.dates.get(-1) || UTCToday(), dir);
+						newDate = this.moveMonth(this.dates.get(-1) || UTCHoy(), dir);
 						newViewDate = this.moveMonth(focusDate, dir);
 						this._trigger('changeMonth', this.viewDate);
 					}
 					else {
-						newDate = new Date(this.dates.get(-1) || UTCToday());
+						newDate = new Date(this.dates.get(-1) || UTCHoy());
 						newDate.setUTCDate(newDate.getUTCDate() + dir * 7);
 						newViewDate = new Date(focusDate);
 						newViewDate.setUTCDate(focusDate.getUTCDate() + dir * 7);
@@ -1396,7 +1396,7 @@
 		daysOfWeekDisabled: [],
 		endDate: Infinity,
 		forceParse: true,
-		format: 'mm/dd/yyyy',
+		format: 'dd/mm/yyyy',
 		keyboardNavigation: true,
 		language: 'en',
 		minViewMode: 0,
@@ -1418,12 +1418,12 @@
 	$.fn.datepicker.Constructor = Datepicker;
 	var dates = $.fn.datepicker.dates = {
 		en: {
-			days: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-			daysShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-			daysMin: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"],
-			months: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-			monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-			today: "Today",
+			days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo"],
+			daysShort: ["D", "L", "M", "X", "J", "V", "S", "D"],
+			daysMin: ["D", "L", "M", "X", "J", "V", "S", "D"],
+			months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+			monthsShort: ["Ene", "Feb", "Mar", "Abr", "Mayo", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dic"],
+			today: "Hoy",
 			clear: "Clear"
 		}
 	};

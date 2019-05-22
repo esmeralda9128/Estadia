@@ -35,18 +35,16 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Inicio Administrador</title>
     </head>
-    <!--[if lt IE 8]>
-          <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
+    
     <!-- Start Header Top Area -->
-    <div class="header-top-area">
+    <div class="header-top-area" >
         <div class="container">
             <div class="row">
                 <!-- As a link -->
                 <!-- Image and text -->
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" href="#">
-                        <img src="<%=context%>/images/MP-logo.png" width="40" height="39" class="d-inline-block align-top" alt="">
+                        <img src="<%=context%>/images/MP-logo.png" width="50" height="49" class="d-inline-block align-top" alt="">
                     </a>
                     <div class="offset-md-2" >
                        <div class="basic-tb-hd">
@@ -102,8 +100,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
-                        <li class="active"><a data-toggle="tab" href="#Home"><i class="notika-icon notika-house"></i> Clientes</a>
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro" >
+                        <li class="active" ><a data-toggle="tab" href="#Home"><i  class="notika-icon notika-dollar"></i> Clientes</a>
                         </li>
                         <li><a data-toggle="tab" href="#mailbox"><i class="notika-icon notika-mail"></i> Email</a>
                         </li>
@@ -115,9 +113,9 @@
                     <div class="tab-content custom-menu-content">
                         <div id="Home" class="tab-pane active notika-tab-menu-bg animated flipInX">
                             <ul class="notika-main-menu-dropdown">
-                                <li><a href="index.html">Ver Clientes</a>
+                                <li><a href="<%=context%>/vistas/administrador/inicio.jsp">Ver Clientes</a>
                                 </li>
-                                <li><a href="index-2.html">Agregar Cliente</a>
+                                <li><a href="<%=context%>/vistas/administrador/agregarCliente.jsp">Agregar Cliente</a>
                                 </li>
                             </ul>
                         </div>
@@ -146,9 +144,7 @@
         </div>
     </div>
     <!-- Main Menu area End-->
-    <!-- Breadcomb area Start-->
 
-    <!-- Breadcomb area End-->
     <!-- Data Table area Start-->
     <div class="data-table-area">
         <div class="container">

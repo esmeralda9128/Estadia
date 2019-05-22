@@ -58,7 +58,7 @@
 	background: #2196F3;
 }
 .btn-success.notika-btn-success:hover, .btn-success.success-icon-notika:hover{
-	background: #0D2F73;
+	background: #020873;
 }
 .btn-warning.notika-btn-warning:hover, .btn-warning.warning-icon-notika:hover{
 	background: #FF9800;
@@ -146,13 +146,13 @@
 	background:#CDDC39;
 }
 .notika-btn-lightgreen, .btn-lightgreen.lightgreen-icon-notika{
-	background:#8BC34A;
+	background:#0D2FA2;
 }
 .btn-lightgreen.lightgreen-icon-notika:hover{
-	background:#8BC34A;
+	background:#0D2FA2;
 }
 .notika-btn-green{
-	background:#4CAF50;
+	background:#00119B;
 }
 .notika-btn-purple{
 	background:#BA68C8;

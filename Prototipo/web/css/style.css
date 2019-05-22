@@ -40,37 +40,6 @@
     width: 100%;
     margin: 1em auto 2em;
 }
-
-/*form label {
-  color: #fff;
-  margin: 0 3% .25em;
-  display: block;
-  font-family: helvetica, sans-serif;
-}
-form input {
-  width: 94%;
-  padding: .5em .25em;
-  margin: 0 3% 1em;
-  font-size: 1.2em;
-  border: 2px solid #000;
-  outline: none;
-  -webkit-transition: all 0.25s;
-  -moz-transition: all 0.25s;
-  -ms-transition: all 0.25s;
-  -o-transition: all 0.25s;
-  transition: all 0.25s;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-form input.password {
-  padding-right: 4rem;
-}
-form input:focus {
-  border: 2px solid #1fd100;
-}*/
-
-
 .hide-show {
   width: 94%;
   margin: -3.62em 3% 0 1.5%;

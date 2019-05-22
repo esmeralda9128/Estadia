@@ -12,7 +12,6 @@
 <html>
 
     <link rel="shortcut icon" type="image/x-icon" href="<%=context%>/img/MP-logo.ico">
-    <link rel="stylesheet" href="<%=context%>/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="<%=context%>/style.css">
     <link rel="stylesheet" href="<%=context%>/css/bootstrap.min.css">
@@ -38,7 +37,7 @@
     <body>
         <div class="login_form">
             <setion class="login-wrapper">
-                <form id="login" method="post" action="#">      
+                <form id="login" method="post" action="<%=context%>/vistas/administrador/inicio.jsp">      
                     <div class="row">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="form-example-wrap">
@@ -59,20 +58,17 @@
                                         <div class="nk-int-st">
                                             <input  class="form-control input-sm"  required name="login[password]" type="password" placeholder="Ingresa tu contraseña">
                                             <div class="hide-show">
-                                                <span>Mostrar</span>
-                                            
+                                                <span>Mostrar</span>                             
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="form-example-int mg-t-7">
-                                    <button class="btn btn-success notika-btn-success">Iniciar sesión</button>
+                                    <button type="submit" class="btn btn-success notika-btn-success">Iniciar sesión</button>
                                 </div>
                             </div>
                         </div>
-
                 </form>
-
                 </section>
         </div>
     </body>
@@ -104,6 +100,6 @@
     <script src="<%=context%>/js/todo/jquery.todo.js"></script>
     <script src="<%=context%>/js/plugins.js"></script>
     <script src="<%=context%>/js/index.js"></script>
-   
-    
+
+
 </html>

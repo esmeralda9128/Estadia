@@ -23,8 +23,8 @@ a.meanmenu-reveal{display:none}
   border-top: 1px solid#ddd;
 }
 .mean-container .mean-nav ul li a {
-  background: #f8f8f8 none repeat scroll 0 0;
-  color: #666666;
+  background: #020873 none repeat scroll 0 0;
+  color: #fff;
   display: block;
   float: left;
   font-size: 16px;
@@ -37,7 +37,7 @@ a.meanmenu-reveal{display:none}
   font-weight: 400;
 }
 .mobile-menu-area {
-  background: #262626;
+  background: #020873;
 }
 .mean-container .mean-nav ul li li a {
   border-top: 1px solid rgba(255, 255, 255, 0.25);
@@ -48,15 +48,15 @@ a.meanmenu-reveal{display:none}
   width: 80%;
   font-weight: normal;
   text-transform: capitalize;
-  color: #444;
+  color: #fff;
 }
 .mean-container .mean-nav ul li.mean-last a{border-bottom:0;margin-bottom:0}
 .mean-container .mean-nav ul li li li a{width:70%;padding:1em 15%}
 .mean-container .mean-nav ul li li li li a{width:60%;padding:1em 20%}
 .mean-container .mean-nav ul li li li li li a{width:50%;padding:1em 25%}
 .mean-container .mean-nav ul li a:hover {
-  background: #f8f8f8 none repeat scroll 0 0;
-  color: #F47E1E;
+  background: #020873 none repeat scroll 0 0;
+  color: #B3D4FC;
 }
 .mean-container .mean-nav ul li a.mean-expand{
 	width:26px;
@@ -70,10 +70,10 @@ a.meanmenu-reveal{display:none}
 	font-weight:700;
 	background:rgba(255,255,255,.1);
 	border:0!important;
-	background: #F8F8F8;
+	background: #020873;
 	}
 .mean-container .mean-nav ul li a.mean-expand:hover {
-  background: #f8f8f8;
+  background: #020873;
 }
 .mean-container .mean-push{float:left;width:100%;padding:0;margin:0;clear:both}
 .mean-nav .wrapper{width:100%;padding:0;margin:0}
@@ -81,7 +81,7 @@ a.meanmenu-reveal{display:none}
 .mean-remove{display:none!important}
 .mean-container .mean-bar::after {
   color: #ffffff;
-  content: "MENU";
+  content: "Menú";
   font-size: 21px;
   left: 5%;
   position: absolute;

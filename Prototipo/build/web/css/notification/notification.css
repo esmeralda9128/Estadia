@@ -21,14 +21,14 @@
     color:#fff!important
 }
 .alert-success{
-    background-color:#4CAF50;
+    background-color:#00119B;
     color:#fff
 }
 .alert-success .alert-link{
     color:#e6e6e6
 }
 .alert-info{
-    background-color:#0D2F73;
+    background-color:#020873;
     color:#fff
 }
 .alert-info .alert-link{
@@ -76,7 +76,7 @@
     box-shadow:0 0 5px rgba(51,51,51,.5)
 }
 .growl-animated.alert-info{
-    box-shadow:0 0 5px rgba(33,150,243,.5)
+    box-shadow:0 0 5px rgba(2,8,115.5)
 }
 .growl-animated.alert-success{
     box-shadow:0 0 5px rgba(76,175,80,.5)
@@ -97,10 +97,10 @@
 	color:#fff;
 }
 .notification-demo .btn-info{
-	background:#0D2F73;
+	background:#020873;
 }
 .notification-demo .btn-info:hover{
-	background:#0D2F73;
+	background:#020873;
 }
 .notification-demo .btn-info:hover, .notification-demo .btn-inverse:hover, .notification-demo .btn-success:hover, .notification-demo .btn-warning:hover, .notification-demo .btn-danger:hover{
 	border:none;
@@ -113,10 +113,10 @@
     background-color: #454545;
 }
 .notification-demo .btn-success {
-    background-color: #4CAF50;
+    background-color: #0D2FA2;
 }
 .notification-demo .btn-success:hover {
-    background-color: #4CAF50;
+    background-color: #0D2FA2;
 }
 .notification-demo .btn-warning {
     background-color: #FF9800;
