@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="packSesiones" extends="struts-default">
+        <action name="vistaLog">
+            <result>/index.jsp</result>
+        </action>
+        <action name="iniciarSesion" class="com.magnapiel.mx.control.ControlLogin" method="login">
+            <result  name="ADMINISTRADOR" type="redirectAction">
+                <param name="actionName">verClientesAdministrador</param>
+            </result>
+            <result name="VENDEDOR">/vistas/Vendedor/inicio.jsp</result>
+        </action> 
+        <action name="verClientesAdministrador" class="com.magnapiel.mx.control.ControlCliente" method="mostrarClientes">
+            <result  name="success">/vistas/Administrador/inicio.jsp</result>          
+        </action>                         
+        <action name="verClienteAdmin" class="com.magnapiel.mx.control.ControlCliente" method="verCliente">
+            <result  name="success">/vistas/Administrador/verCliente.jsp</result>          
+        </action>                         
+        <action name="prueba" class="com.magnapiel.mx.control.ControlMarketing" method="prueba">
+            <result  name="success">/vistas/404.jsp</result>          
+        </action>                         
+        <action name="verConsignado" class="com.magnapiel.mx.control.ControlConsignado" method="verConsignadoAdmin">
+            <result  name="success">/vistas/Administrador/verConsignado.jsp</result>          
+        </action>                         
+        <action name="abrirPedidoAdmin" class="com.magnapiel.mx.control.ControlPedido" method="abrirPedido">
+            <result  name="success">/vistas/Administrador/pedido.jsp</result>          
+        </action>
+       <!--- <constant name="struts.convention.action.suffix" value="Controller"/>
+        <constant name="struts.convention.action.mapAllMatches" value="true"/>
+        <constant name="struts.convention.default.parent.package" value="rest-default"/>
+        <constant name="struts.convention.package.locators" value="rest"/>  -->                       
+    </package>
+        
+    
+</struts>

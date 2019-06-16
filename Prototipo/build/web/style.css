@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 a {transition: all 0.3s ease 0s;text-decoration:none;}
 a:hover {
-    color: #020873;
     text-decoration: none;
 }
 a:active, a:hover, a:focus {
@@ -188,22 +187,22 @@ body {}
     background:#fff;
 }
 .logo-area{
-    padding:14px 0px;
+    padding:5px 0px;
 }
 .nav.navbar-nav.notika-top-nav{
     float: right;
 }
 .nav.notika-top-nav .open>a, .nav.notika-top-nav .open>a:focus, .nav.notika-top-nav .open>a:hover {
-    background: #020873;
-    border-color: 0px solid #020873;
+    background: #fff;
+    border-color: 0px solid #fff;
 
 }
 .nav.notika-top-nav>li>a:focus, .nav.notika-top-nav>li>a:hover {
     text-decoration: none;
-    background-color: #020873 !important; 
+    background-color: transparent !important; 
 }
 .navbar-nav>li>a{
-    
+
     padding: 20px 0px 20px 30px;
 }
 .rtl-layout .navbar-nav>li>a{
@@ -433,11 +432,10 @@ body {}
 /*  3.  Main Menu CSS
 /*----------------------------------------*/
 .nav-tabs.notika-menu-wrap{
-    border-bottom: 0px solid #B3D4FC;
-    background: #020873;
+    border-bottom: 0px solid #020873;    
 }
 .nav-tabs.notika-menu-wrap>li.active>a, .nav-tabs.notika-menu-wrap>li.active>a:focus, .nav-tabs.notika-menu-wrap>li.active>a:hover{
-    border: 0px solid #B3D4FC;
+    border: 0px solid #020873;
     border:none;
 }
 .notika-tab-menu-bg{
@@ -448,8 +446,7 @@ body {}
     top: 0px;
     left: 0px;
     width: 100%;
-    /*color del dropdow del main-menu*/
-    background: #fff; 
+    background: #fff;
     content: "";
     z-index: 9;
     height: 100%;
@@ -458,24 +455,22 @@ body {}
     position: relative;
     z-index: 99;
 }
-/*Letras del manin menu opciones pricipales*/
 ul.notika-menu-wrap li a{
     font-size: 15px;
     color: #fff;
     padding: 15px 25px;
     border:none;
+    background-color:#020873;
 }
 .custom-menu-content ul.notika-main-menu-dropdown li{
     display:inline-block;
 }
-/* letras del dropdown*/
 .custom-menu-content ul.notika-main-menu-dropdown li a {
     padding: 20px 20px;
     display: block;
     font-size:14px;
     color:#020873;
 }
-/* se puso en rojo*/
 .custom-menu-content ul.notika-main-menu-dropdown li ul.layout-more-dp{
     position: absolute;
     z-index: 999;
@@ -486,6 +481,7 @@ ul.notika-menu-wrap li a{
 }
 .custom-menu-content ul.notika-main-menu-dropdown li ul.layout-more-dp li a{
     font-size: 14px;
+    color: #333;
     padding: 10px 20px;
 }
 .animated{
@@ -496,6 +492,12 @@ ul.notika-menu-wrap li a{
 }
 .mg-t-80-b-40{
     margin:102px 0px 40px 0px;
+}
+.mean-container .mean-nav ul li a {
+    color: #333;
+}
+.mean-container .mean-nav ul li a:hover {
+    color: #00c292;
 }
 .box-layout .header-top-area {
     width: 1200px;
@@ -2650,8 +2652,10 @@ hr {
     margin-bottom:20px;
 }
 .basic-tb-en{
-    margin-top:20px;
+    margin-top:15px;
     color: #020873;
+    font-size: 25px;
+    font-weight: bold;
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
     font-size:14px;

@@ -58,13 +58,18 @@
                                         <div class="nk-int-st">
                                             <input  class="form-control input-sm"  required name="login[password]" type="password" placeholder="Ingresa tu contraseña">
                                             <div class="hide-show">
-                                                <span>Mostrar</span>                             
+                                                <span> Mostrar</span>                             
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="form-example-int mg-t-7">
-                                    <button type="submit" class="btn btn-success notika-btn-success">Iniciar sesión</button>
+                                <div class="row">
+                                    <br/>
+                                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                        <div class="form-example-int mg-t-7">
+                                            <button type="submit" class="btn btn-success notika-btn-success">Iniciar sesión</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

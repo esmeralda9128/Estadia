@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="<%=context%>/css/wave/waves.min.css">
     <link rel="stylesheet" href="<%=context%>/css/wave/button.css">
     <link rel="stylesheet" href="<%=context%>/css/main.css">
+    <link rel="stylesheet" href="<%=context%>/css/dialog/sweetalert2.min.css">
+    <link rel="stylesheet" href="<%=context%>/css/dialog/dialog.css">
     <link rel="stylesheet" href="<%=context%>/css/responsive.css">
     <script src="<%=context%>/js/vendor/modernizr-2.8.3.min.js"></script>
     <link rel="stylesheet" href="<%=context%>/css/style.css">
@@ -35,28 +37,40 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Inicio Administrador</title>
     </head>
-    
+    <body>
     <!-- Start Header Top Area -->
-    <div class="header-top-area" >
+   <div class="header-top-area">
         <div class="container">
             <div class="row">
-                <!-- As a link -->
-                <!-- Image and text -->
-                <nav class="navbar navbar-light bg-light">
-                    <a class="navbar-brand" href="#">
-                        <img src="<%=context%>/images/MP-logo.png" width="50" height="49" class="d-inline-block align-top" alt="">
-                    </a>
-                    <div class="offset-md-2" >
-                       <div class="basic-tb-hd">
-                            <h2>Administrador</h2>
-                        </div>
+                <div class="col-lg-1 col-md-1 col-sm-4 col-xs-4">
+                    <div class="logo-area">
+                        <a href="#"><img src="<%=context%>/images/MP-logo.png" width="50" height="49"  alt="" /></a>
                     </div>
-                   
-                </nav>
-
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                    <div class="basic-tb-en">
+                        Administrador
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9 col-sm-4 col-xs-4">
+                    <div class="header-top-menu">
+                        <ul class="nav navbar-nav notika-top-nav">
+                            <li class="nav-item"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle"><span><i class="notika-icon notika-settings"></i></span></a>
+                                <div role="menu" class="dropdown-menu message-dd chat-dd animated zoomIn">
+                                    <div class="hd-mg-tt">
+                                        <h2>Opciones</h2>
+                                    </div>
+                                    <button src=""  class="btn btn-success notika-btn-success dropbtn" id="sa-success" ><span class="notika-icon notika-support"></span>Perfil</button>
+                                    <button class="btn btn-success notika-btn-success dropbtn" id="sa-success"><span class="notika-icon notika-close">Cerrar sesión</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <!-- End Header Top Area -->
     <!-- Mobile Menu start -->
     <div class="mobile-menu-area">
@@ -68,8 +82,8 @@
                             <ul class="mobile-menu-nav">
                                 <li><a data-toggle="collapse" data-target="#Charts" href="#">Clientes</a>
                                     <ul class="collapse dropdown-header-top">
-                                        <li><a href="index.html">Ver Clientes</a></li>
-                                        <li><a href="index-2.html">Agergar Clientes</a></li>
+                                        <li><a href="<%=context%>/vistas/administrador/inico.jsp">Ver Clientes</a></li>
+                                        <li><a href="<%=context%>/vistas/administrador/agregarCliente.jsp">Agergar Clientes</a></li>
                                         <li><a href="index-3.html">Seguimiento</a></li>
 
                                     </ul>
@@ -167,6 +181,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    
                                     <tr>
                                         <td>Tiger Nixon</td>
                                         <td>System Architect</td>
@@ -215,6 +230,7 @@
                                         <td>2012/12/02</td>
                                         <td>$372,000</td>
                                     </tr>
+                                    hola
                                     <tr>
                                         <td>Herrod Chandler</td>
                                         <td>Sales Assistant</td>
@@ -239,6 +255,7 @@
                                         <td>2009/09/15</td>
                                         <td>$205,500</td>
                                     </tr>
+                               
                                     <tr>
                                         <td>Sonya Frost</td>
                                         <td>Software Engineer</td>

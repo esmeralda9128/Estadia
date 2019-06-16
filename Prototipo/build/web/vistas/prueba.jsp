@@ -17,32 +17,33 @@
     <title>Dialog | Notika - Notika Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- favicon
-		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
-    <!-- Google Fonts
-		============================================ -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="<%=context%>/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<%=context%>/css/font-awesome.min.css">
+
+    
     <link rel="stylesheet" href="<%=context%>/css/owl.carousel.css">
     <link rel="stylesheet" href="<%=context%>/css/owl.theme.css">
     <link rel="stylesheet" href="<%=context%>/css/owl.transitions.css">
     <link rel="stylesheet" href="<%=context%>/css/meanmenu/meanmenu.min.css">
+    <link rel="stylesheet" href="<%=context%>/css/notika-custom-icon.css">
+    <link rel="stylesheet" href="<%=context%>/css/scrollbar/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="<%=context%>/css/animate.css">
     <link rel="stylesheet" href="<%=context%>/css/normalize.css">
-    <link rel="stylesheet" href="<%=context%>/css/scrollbar/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="<%=context%>/css/notika-custom-icon.css">
     <link rel="stylesheet" href="<%=context%>/css/wave/waves.min.css">
-    <link rel="stylesheet" href="<%=context%>/css/dialog/sweetalert2.min.css">
-    <link rel="stylesheet" href="<%=context%>/css/dialog/dialog.css">
     <link rel="stylesheet" href="<%=context%>/css/main.css">
-    <link rel="stylesheet" href="<%=context%>/style.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="<%=context%>/css/responsive.css">
-    <script src="<%=context%>/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+ 
+    
+    
+     <STYLE type="text/css">
+   .styled {
+       background: white;
+   }
+ </STYLE>
 </head>
 
 <body>
+    
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -693,41 +694,6 @@
                 </div>
             </div>
         </div>
-        
-        
-        <div class="card-box">
-                            <div class="todoapp">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-12">
-                                        <h4 id="todo-message"><span id="todo-remaining"></span> of <span id="todo-total"></span> remaining</h4>
-                                    </div>
-                                    <div class="col-sm-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="notika-todo-btn">
-                                            <a href="#" class="pull-right btn btn-primary btn-sm" id="btn-archive">Archive</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="notika-todo-scrollbar">
-                                    <ul class="list-group no-margn todo-list" id="todo-list"></ul>
-                                </div>
-                                <div id="todo-form">
-                                    <div class="row">
-                                        <div class="col-sm-12 col-md-12 col-sm-12 col-xs-12 todo-inputbar">
-                                            <div class="form-group todo-flex">
-                                                <div class="nk-int-st">
-                                                    <input type="text" id="todo-input-text" name="todo-input-text" class="form-control" placeholder="Add new todo">
-                                                </div>
-                                                <div class="todo-send">
-                                                    <button class="btn-primary btn-md btn-block btn notika-add-todo" type="button" id="todo-btn-submit">Add</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
     </div>
     <!-- Dialog area End-->
     <!-- Start Footer area-->
@@ -745,71 +711,33 @@
     </div>
     <!-- End Footer area-->
     <!-- jquery
-		============================================ -->
-    <script src="<%=context%>/js/vendor/jquery-1.12.4.min.js"></script>
-    <!-- bootstrap JS
-		============================================ -->
-    <script src="<%=context%>/js/bootstrap.min.js"></script>
-    <!-- wow JS
-		============================================ -->
-    <script src="<%=context%>/js/wow.min.js"></script>
-    <!-- price-slider JS
-		============================================ -->
-    <script src="<%=context%>/js/jquery-price-slider.js"></script>
-    <!-- owl.carousel JS
-		============================================ -->
-    <script src="<%=context%>/js/owl.carousel.min.js"></script>
-    <!-- scrollUp JS
-		============================================ -->
-    <script src="<%=context%>/js/jquery.scrollUp.min.js"></script>
-    <!-- meanmenu JS
-		============================================ -->
-    <script src="<%=context%>/js/meanmenu/jquery.meanmenu.js"></script>
-    <!-- counterup JS
-		============================================ -->
-    <script src="<%=context%>/js/counterup/jquery.counterup.min.js"></script>
-    <script src="<%=context%>/js/counterup/waypoints.min.js"></script>
-    <script src="<%=context%>/js/counterup/counterup-active.js"></script>
-    <!-- mCustomScrollbar JS
-		============================================ -->
-    <script src="<%=context%>/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
-    <!-- sparkline JS
-		============================================ -->
-    <script src="<%=context%>/js/sparkline/jquery.sparkline.min.js"></script>
-    <script src="<%=context%>/js/sparkline/sparkline-active.js"></script>
-    <!-- flot JS
-		============================================ -->
-    <script src="<%=context%>/js/flot/jquery.flot.js"></script>
-    <script src="<%=context%>/js/flot/jquery.flot.resize.js"></script>
-    <script src="<%=context%>/js/flot/flot-active.js"></script>
-    <!-- knob JS
-		============================================ -->
-    <script src="<%=context%>/js/knob/jquery.knob.js"></script>
-    <script src="<%=context%>/js/knob/jquery.appear.js"></script>
-    <script src="<%=context%>/js/knob/knob-active.js"></script>
-    <!--  wave JS
-		============================================ -->
-    <script src="<%=context%>/js/wave/waves.min.js"></script>
-    <script src="<%=context%>/js/wave/wave-active.js"></script>
-    <!--  Chat JS
-		============================================ -->
-    <script src="<%=context%>/js/dialog/sweetalert2.min.js"></script>
-    <script src="<%=context%>/js/dialog/dialog-active.js"></script>
-    <!--  Chat JS
-		============================================ -->
-    <script src="<%=context%>/js/chat/jquery.chat.js"></script>
-    <!--  todo JS
-		============================================ -->
-    <script src="<%=context%>/js/todo/jquery.todo.js"></script>
-    <!-- plugins JS
-		============================================ -->
-    <script src="<%=context%>/js/plugins.js"></script>
-    <!-- main JS
-		============================================ -->
-    <script src="<%=context%>/js/main.js"></script>
-	<!-- tawk chat JS
-		============================================ -->
-    <script src="<%=context%>/js/tawk-chat.js"></script>
+                    ============================================ -->
+                <script src="<%=context%>/js/vendor/jquery-1.12.4.min.js"></script>
+                <script src="<%=context%>/js/bootstrap.min.js"></script>
+                <script src="<%=context%>/js/wow.min.js"></script>
+                <script src="<%=context%>/js/jquery-price-slider.js"></script>
+                <script src="<%=context%>/js/owl.carousel.min.js"></script>
+                <script src="<%=context%>/js/jquery.scrollUp.min.js"></script>
+                <script src="<%=context%>/js/meanmenu/jquery.meanmenu.js"></script>
+                <script src="<%=context%>/js/counterup/jquery.counterup.min.js"></script>
+                <script src="<%=context%>/js/counterup/waypoints.min.js"></script>
+                <script src="<%=context%>/js/counterup/counterup-active.js"></script>
+                <script src="<%=context%>/js/sparkline/jquery.sparkline.min.js"></script>
+                <script src="<%=context%>/js/sparkline/sparkline-active.js"></script>
+                <script src="<%=context%>/js/knob/jquery.knob.js"></script>
+                <script src="<%=context%>/js/knob/jquery.appear.js"></script>
+                <script src="<%=context%>/js/knob/knob-active.js"></script>
+                <script src="<%=context%>/js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+                <script src="<%=context%>/js/flot/flot-widget-anatic-active.js"></script>
+                <script src="<%=context%>/js/flot/chart-tooltips.js"></script>
+                <script src="<%=context%>/js/flot/flot-active.js"></script>
+                <script src="<%=context%>/js/wave/waves.min.js"></script>
+                <script src="<%=context%>/js/wave/wave-active.js"></script>
+                <script src="<%=context%>/js/plugins.js"></script>
+                <script src="<%=context%>/js/google.maps/google.maps-active.js"></script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVOIQ3qXUCmKVVV7DVexPzlgBcj5mQJmQ&callback=initMap"></script>
+                 <script src="<%=context%>/js/main.js"></script>
+
 </body>
 
 </html>

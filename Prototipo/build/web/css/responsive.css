@@ -325,7 +325,7 @@
 
  
 /* small mobile :320px. */
-@media (max-width: 767px) {
+@media (max-width: 452px) {
 	.container {width:300px}
 	.main-menu-area{
 		display:none;
@@ -337,7 +337,7 @@
 		display:none;
 	}
 	.logo-area{
-		text-align:center;
+		text-align:left;
 	}
 	.nav.navbar-nav.notika-top-nav {
 		float: unset;

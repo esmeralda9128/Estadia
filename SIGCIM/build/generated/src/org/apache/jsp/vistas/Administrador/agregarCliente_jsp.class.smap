@@ -1,0 +1,25 @@
+SMAP
+agregarCliente_jsp.java
+JSP
+*S JSP
+*F
++ 0 agregarCliente.jsp
+vistas/Administrador/agregarCliente.jsp
+*L
+5,6:44
+10,5:50
+15:55,3
+16:58
+17,27:59,3
+44,10:140
+54:150,3
+55,37:153
+92,2:190,3
+94,58:196
+152:254,3
+153:257
+154:258,3
+155,45:261
+200,49:306,3
+249,5:453
+*E
